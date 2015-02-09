@@ -1,3 +1,5 @@
-{{#each show in shows}}
-  {{tv-show data=show}}
+{{#each show in model}}
+  {{tv-show data=show info='info' follow='follow'}}
 {{/each}}
+
+{{outlet}}

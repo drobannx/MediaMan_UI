@@ -1,2 +1,6 @@
-<img {{bind-attr src=posterImage}} height="100" width="50">
+<img class="text-center" {{bind-attr src=posterImage}} height="160" width="90">
 <p>{{data.name}}</p>
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-default" {{action 'follow'}}>Follow</button>
+  <button type="button" class="btn btn-default" {{action 'info'}}>Info</button>
+</div>
